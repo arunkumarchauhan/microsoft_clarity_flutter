@@ -5,7 +5,7 @@
 
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 import 'package:microsoft_clarity_flutter/clarity_config.dart';
-import 'package:web/web.dart' as web;
+// import 'package:web/web.dart' as web;
 
 import 'microsoft_clarity_flutter_platform_interface.dart';
 
