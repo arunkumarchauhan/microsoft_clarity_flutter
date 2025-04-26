@@ -13,7 +13,7 @@ Flutter Microsoft Clarity Analytics interaction plugin
             projectId: "<projectId?",
             userId: "<UserId>"),
 ```
-- On native iOS side inside add following in AppDelegate.swift inside application method to nitialize  Clarity
+- On native iOS side  add following in AppDelegate.swift inside application method to nitialize  Clarity
 ```
        ClaritySDK.initialize(config: ClarityConfig(projectId: "<ProjectId>",logLevel: .verbose,applicationFramework: .native))
 ```
