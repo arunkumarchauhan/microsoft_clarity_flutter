@@ -20,8 +20,7 @@ Flutter Microsoft Clarity Analytics interaction plugin
 - No native setting required on android Side.
 
 ## Methods available are as follows:
--  ``` Future<bool> init({required ClarityConfig config}) 
-```
+-  ``` Future<bool> init({required ClarityConfig config}) ```
 -  ```  Future<bool> isPaused() 
 ```
 - ``` Future<bool> maskView()
