@@ -1,0 +1,35 @@
+PODS:
+  - Clarity (3.0.7)
+  - Flutter (1.0.0)
+  - integration_test (0.0.1):
+    - Flutter
+  - microsoft_clarity_flutter (0.0.1):
+    - Clarity
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - integration_test (from `.symlinks/plugins/integration_test/ios`)
+  - microsoft_clarity_flutter (from `.symlinks/plugins/microsoft_clarity_flutter/ios`)
+
+SPEC REPOS:
+  trunk:
+    - Clarity
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  integration_test:
+    :path: ".symlinks/plugins/integration_test/ios"
+  microsoft_clarity_flutter:
+    :path: ".symlinks/plugins/microsoft_clarity_flutter/ios"
+
+SPEC CHECKSUMS:
+  Clarity: 36b23457f3b8a2f95a7a193c18b42136ce34c31b
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  integration_test: 252f60fa39af5e17c3aa9899d35d908a0721b573
+  microsoft_clarity_flutter: f37aab20a7c8389a5b0bc9128cada98202a177f8
+
+PODFILE CHECKSUM: 42340377e5c3f4acaf82babe12d086942e1127ae
+
+COCOAPODS: 1.16.2
