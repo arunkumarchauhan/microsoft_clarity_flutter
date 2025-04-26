@@ -36,24 +36,24 @@ import Clarity
 
 ## Methods available are as follows:
 <br/>
--  ```  Future<bool> init({required ClarityConfig config}) ```
+-   Future<bool> init({required ClarityConfig config})
 <br/>
--  ```  Future<bool> isPaused() ```
+-   Future<bool> isPaused() 
 <br/>
-- ``` Future<bool> maskView()```
+- Future<bool> maskView()
 <br/>
-- ``` Future<bool> pause() ```
+- Future<bool> pause() 
 <br/>
-- ```   Future<bool> resume() ```
+-  Future<bool> resume() 
 <br/>
-- ```   Future<bool> sendCustomEvent(String eventName)```
+- Future<bool> sendCustomEvent(String eventName)
 <br/>
-- ```   Future<bool> setCurrentScreenName(String screenName)```
+- Future<bool> setCurrentScreenName(String screenName)
 <br/>
-- ```   Future<bool> setCustomSessionId(String sessionId) ```
+- Future<bool> setCustomSessionId(String sessionId)
 <br/>
-- ```   Future<bool> setCustomTag(String customTagKey, String customTagValue)```
+- Future<bool> setCustomTag(String customTagKey, String customTagValue)
 <br/>
-- ```   Future<bool> unmaskView()```
+- Future<bool> unmaskView()
 <br/>
-- ``` Future<bool> setCustomUserId(String userId)```
+- Future<bool> setCustomUserId(String userId)
