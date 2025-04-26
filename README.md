@@ -13,9 +13,24 @@ Flutter Microsoft Clarity Analytics interaction plugin
             projectId: "<projectId?",
             userId: "<UserId>"),
 ```
-- On native iOS side  add following in AppDelegate.swift inside application method to nitialize  Clarity
+- On native iOS side  add following in AppDelegate.swift  to initialize  Clarity
 ```
+import Flutter
+import UIKit
+import Clarity
+
+@main
+@objc class AppDelegate: FlutterAppDelegate {
+  override func application(
+    _ application: UIApplication,
+    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+  ) -> Bool {
+    GeneratedPluginRegistrant.register(with: self)
        ClaritySDK.initialize(config: ClarityConfig(projectId: "<ProjectId>",logLevel: .verbose,applicationFramework: .native))
+    return super.application(application, didFinishLaunchingWithOptions: launchOptions)
+  }
+}
+
 ```
 - No native setting required on android Side.
 
