@@ -1,15 +1,44 @@
 # microsoft_clarity_flutter
 
-A new Flutter plugin project.
+Flutter Microsoft Clarity Analytics interaction plugin
 
 ## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/to/develop-plugins),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+- Initialize the plugin as 
+```
+  final _microsoftClarityFlutterPlugin = MicrosoftClarityFlutter();
+      await _microsoftClarityFlutterPlugin.init(
+        config: ClarityConfig(
+            logLevel: LogLevel.Verbose,
+            projectId: "<projectId?",
+            userId: "<UserId>"),
+```
+- On native iOS side inside add following in AppDelegate.swift inside application method to nitialize  Clarity
+```
+       ClaritySDK.initialize(config: ClarityConfig(projectId: "<ProjectId>",logLevel: .verbose,applicationFramework: .native))
+```
+- No native setting required on android Side.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
+## Methods available are as follows:
+-  ``` Future<bool> init({required ClarityConfig config}) 
+```
+-  ```  Future<bool> isPaused() 
+```
+- ``` Future<bool> maskView()
+```
+- ``` Future<bool> pause() 
+```
+- ```   Future<bool> resume() 
+```
+- ```   Future<bool> sendCustomEvent(String eventName)
+```
+- ```   Future<bool> setCurrentScreenName(String screenName)
+```
+- ```   Future<bool> setCustomSessionId(String sessionId) 
+```
+- ```   Future<bool> setCustomTag(String customTagKey, String customTagValue) 
+```
+- ```   Future<bool> unmaskView()
+```
+- ``` Future<bool> setCustomUserId(String userId)
+```
